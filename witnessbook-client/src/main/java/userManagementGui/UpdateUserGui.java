@@ -4,19 +4,19 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-import entities.User;
 import services.UserManagementRemote;
 
-public class AddUserGui {
+public class UpdateUserGui {
 	public static void main(String[] args) {
 		try {
 			Context context = new InitialContext();
 			UserManagementRemote userManagementRemote = (UserManagementRemote) context
 					.lookup("witnessbook-ear/witnessbook-ejb/UserManagement!services.UserManagementRemote");
 
-			//User user = new User("chaima");
+			// User userFound = userManagementRemote.findUserById(1);
+			// userFound.setName("newLook");
 
-			//userManagementRemote.addUser(user);
+			// userManagementRemote.updateUser(userFound);
 
 		} catch (NamingException e) {
 			// TODO Auto-generated catch block

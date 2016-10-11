@@ -3,7 +3,7 @@
 	<persistence-unit name="witnessbook-ejb">
 		<jta-data-source>java:jboss/datasources/witnessDS</jta-data-source>
 		<properties>
-			<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+			<property name="hibernate.hbm2ddl.auto" value="create"/>
 		</properties>
 	</persistence-unit>
 </persistence>

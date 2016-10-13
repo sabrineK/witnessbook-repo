@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 /**
  * Entity implementation class for Entity: MarkBand
@@ -20,6 +22,10 @@ public class MarkBand implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private Float markCounter;
+	@ManyToOne
+	private User member;
+	@ManyToOne
+	private User band;
 
 	public MarkBand() {
 		super();
@@ -45,6 +51,22 @@ public class MarkBand implements Serializable {
 
 	public void setMarkCounter(Float markCounter) {
 		this.markCounter = markCounter;
+	}
+
+	public User getMember() {
+		return member;
+	}
+
+	public void setMember(User member) {
+		this.member = member;
+	}
+
+	public User getBand() {
+		return band;
+	}
+
+	public void setBand(User band) {
+		this.band = band;
 	}
 
 }

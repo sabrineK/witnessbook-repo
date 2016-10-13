@@ -24,16 +24,16 @@ public class Challenge implements Serializable {
 	private Date dateCreation;
 	private Date deadline;
 
+	public Challenge() {
+		super();
+	}
+
 	public Challenge(Integer id, String subject, Date dateCreation, Date deadline) {
 		super();
 		this.id = id;
 		this.subject = subject;
 		this.dateCreation = dateCreation;
 		this.deadline = deadline;
-	}
-
-	public Challenge() {
-		super();
 	}
 
 	public Integer getId() {

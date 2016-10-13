@@ -1,11 +1,13 @@
 package entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 /**
  * Entity implementation class for Entity: Question
@@ -20,6 +22,8 @@ public class Question implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String statement;
+	@OneToMany
+	private ArrayList<Answer> answers;
 
 	public Question(Integer id, String statement) {
 		super();
@@ -29,6 +33,7 @@ public class Question implements Serializable {
 
 	public Question() {
 		super();
+		answers = new ArrayList<>();
 	}
 
 	public Integer getId() {
@@ -45,6 +50,14 @@ public class Question implements Serializable {
 
 	public void setStatement(String statement) {
 		this.statement = statement;
+	}
+
+	public ArrayList<Answer> getAnswers() {
+		return answers;
+	}
+
+	public void setAnswers(ArrayList<Answer> answers) {
+		this.answers = answers;
 	}
 
 }

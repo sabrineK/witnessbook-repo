@@ -1,12 +1,16 @@
 package entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 /**
  * Entity implementation class for Entity: Event
@@ -24,6 +28,26 @@ public class Event implements Serializable {
 	private Date creationDate;
 	private Date expirationDate;
 	private Integer placesNumber;
+	
+	@ManyToOne
+	private User customer;
+	@ManyToOne
+	private User band;
+	@OneToMany
+	private ArrayList<Ticket> tickets;
+
+	public Event(String description, Date creationDate, Date expirationDate, Integer placesNumber) {
+		super();
+		this.description = description;
+		this.creationDate = creationDate;
+		this.expirationDate = expirationDate;
+		this.placesNumber = placesNumber;
+	}
+
+	public Event() {
+		super();
+		tickets = new ArrayList<Ticket>();
+	}
 
 	public Integer getId() {
 		return id;
@@ -65,16 +89,28 @@ public class Event implements Serializable {
 		this.placesNumber = placesNumber;
 	}
 
-	public Event(String description, Date creationDate, Date expirationDate, Integer placesNumber) {
-		super();
-		this.description = description;
-		this.creationDate = creationDate;
-		this.expirationDate = expirationDate;
-		this.placesNumber = placesNumber;
+	public User getCustomer() {
+		return customer;
 	}
 
-	public Event() {
-		super();
+	public void setCustomer(User customer) {
+		this.customer = customer;
+	}
+
+	public User getBand() {
+		return band;
+	}
+
+	public void setBand(User band) {
+		this.band = band;
+	}
+
+	public ArrayList<Ticket> getTickets() {
+		return tickets;
+	}
+
+	public void setTickets(ArrayList<Ticket> tickets) {
+		this.tickets = tickets;
 	}
 
 }

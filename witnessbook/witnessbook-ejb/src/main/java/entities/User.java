@@ -1,42 +1,68 @@
 package entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.OneToMany;
 
 /**
  * Entity implementation class for Entity: User
  *
  */
 @Entity
-
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "role")
 public class User implements Serializable {
-	
+
 	private static final long serialVersionUID = 1L;
-	
-	
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-	private String login;
-	private String password;
-	private String mail;
-	private String adress;
-	private String phone;
-	private String avatar;
-	private Boolean isActif;
+	protected Integer id;
+	protected String login;
+	protected String password;
+	protected String mail;
+	protected String adress;
+	protected String phone;
+	protected String avatar;
+	protected Boolean isActif;
 	private Boolean isBaned;
-	
+
+	@OneToMany
+	protected ArrayList<User> followingBands;
+	@OneToMany
+	protected ArrayList<User> followers;
+	@OneToMany
+	protected ArrayList<Playlist> playlists;
+	@OneToMany
+	protected ArrayList<Challenge> challenges;
+	@OneToMany
+	protected ArrayList<Message> messages;
+	@OneToMany
+	protected ArrayList<HiringRequest> hiringRequests;
+	@OneToMany
+	protected ArrayList<Offer> offers;
+	@OneToMany
+
+	protected ArrayList<Ticket> tickets;
+	@OneToMany
+	protected ArrayList<Topic> topics;
+
 	public User() {
 		super();
+		messages = new ArrayList<Message>();
+		topics = new ArrayList<>();
 	}
 
-	public User(String login, String password, String mail, String adress, String phone, String avatar,
-			Boolean isActif, Boolean isBaned) {
+	public User(String login, String password, String mail, String adress, String phone, String avatar, Boolean isActif,
+			Boolean isBaned) {
 		super();
 		this.login = login;
 		this.password = password;
@@ -134,7 +160,12 @@ public class User implements Serializable {
 		this.isBaned = isBaned;
 	}
 
-	
+	public ArrayList<Message> getMessages() {
+		return messages;
+	}
 
-	
+	public void setMessages(ArrayList<Message> messages) {
+		this.messages = messages;
+	}
+
 }

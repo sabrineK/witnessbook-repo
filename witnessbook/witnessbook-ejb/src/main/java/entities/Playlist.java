@@ -1,12 +1,15 @@
 package entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 /**
  * Entity implementation class for Entity: Playlist
@@ -23,9 +26,12 @@ public class Playlist implements Serializable {
 	private String title;
 	private Date creationDate;
 	private Float mark;
+	@OneToMany
+	private ArrayList<Song> songs;
 
 	public Playlist() {
 		super();
+		songs = new ArrayList<>();
 	}
 
 	public Playlist(Integer id, String title, Date creationDate, Float mark) {
@@ -66,6 +72,14 @@ public class Playlist implements Serializable {
 
 	public void setMark(Float mark) {
 		this.mark = mark;
+	}
+
+	public ArrayList<Song> getSongs() {
+		return songs;
+	}
+
+	public void setSongs(ArrayList<Song> songs) {
+		this.songs = songs;
 	}
 
 }

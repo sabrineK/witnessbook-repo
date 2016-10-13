@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.11" icons="true" automaticImage="PNG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
+  <class id="1" language="java" name="entities.Band" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Band.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="166" width="131" x="2606" y="323"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="entities.Challenge" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Challenge.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="148" width="131" x="183" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="entities.Playlist" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Playlist.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="148" width="131" x="354" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="entities.Question" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Question.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="112" width="131" x="525" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="entities.Song" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Song.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="166" width="131" x="1038" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="entities.Message" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Message.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="148" width="131" x="696" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="entities.Topic" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Topic.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="148" width="131" x="1209" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="entities.MarkSong" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/MarkSong.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="112" width="131" x="867" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="entities.Member" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Member.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="130" width="131" x="2777" y="323"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="entities.Survey" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Survey.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="112" width="131" x="1551" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="entities.Offer" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Offer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="166" width="131" x="1722" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="entities.MarkBand" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/MarkBand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="112" width="131" x="1893" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <enumeration id="13" language="java" name="entities.TypeMedia" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/TypeMedia.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="112" width="119" x="1209" y="529"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </enumeration>  
+  <class id="14" language="java" name="entities.Event" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Event.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="166" width="134" x="2064" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="entities.Recommendation" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Recommendation.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="112" width="157" x="2238" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="entities.Ticket" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Ticket.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="148" width="131" x="2435" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="entities.Attachement" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Attachement.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="112" width="131" x="1209" y="323"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="entities.Customer" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Customer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="130" width="154" x="2948" y="323"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="entities.HiringRequest" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/HiringRequest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="130" width="131" x="2606" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="entities.Answer" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Answer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="130" width="131" x="2777" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="entities.Comment" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/Comment.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="130" width="131" x="1380" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="entities.User" project="witnessbook-ejb" 
+    file="/witnessbook-ejb/src/main/java/entities/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="238" width="131" x="2948" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <generalization id="23">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="24">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="25" name="attachement"/>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="28" name="attachement"/>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="31">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="32" name="track"/>      
+      <multiplicity id="33" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="35" name="typeMedia"/>      
+      <multiplicity id="36" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="false" package="false" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

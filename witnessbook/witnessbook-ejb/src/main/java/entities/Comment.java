@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 /**
  * Entity implementation class for Entity: Comment
@@ -22,7 +24,10 @@ public class Comment implements Serializable {
 	private Integer id;
 	private Date dateComment;
 	private String text;
+	@OneToOne(mappedBy="Comment")
 	private Attachement attachement;
+	@ManyToOne
+	private User owner;
 
 	public Comment() {
 		super();
@@ -65,6 +70,14 @@ public class Comment implements Serializable {
 
 	public void setAttachement(Attachement attachement) {
 		this.attachement = attachement;
+	}
+
+	public User getOwner() {
+		return owner;
+	}
+
+	public void setOwner(User owner) {
+		this.owner = owner;
 	}
 
 }

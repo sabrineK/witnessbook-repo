@@ -1,6 +1,7 @@
 package entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -23,6 +24,9 @@ public class Band extends User implements Serializable {
 
 	public Band() {
 		super();
+		followers = new ArrayList<>();
+		playlists = new ArrayList<>();
+		hiringRequests = new ArrayList<>();
 	}
 
 	public Band(Integer id, String login, String password, String mail, String adress, String phone, String avatar,
@@ -75,6 +79,30 @@ public class Band extends User implements Serializable {
 
 	public void setIsVerified(Boolean isVerified) {
 		this.isVerified = isVerified;
+	}
+
+	public ArrayList<User> getFollowers() {
+		return followers;
+	}
+
+	public void setFollowers(ArrayList<User> followers) {
+		this.followers = followers;
+	}
+
+	public ArrayList<Playlist> getPlaylists() {
+		return playlists;
+	}
+
+	public void setPlaylists(ArrayList<Playlist> playlists) {
+		this.playlists = playlists;
+	}
+
+	public ArrayList<HiringRequest> getHiringRequests() {
+		return hiringRequests;
+	}
+
+	public void setHiringRequests(ArrayList<HiringRequest> hiringRequests) {
+		this.hiringRequests = hiringRequests;
 	}
 
 }

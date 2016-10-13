@@ -22,6 +22,17 @@ public class Answer implements Serializable {
 	private String statement;
 	private Boolean type;
 
+	public Answer(Integer id, String statement, Boolean type) {
+		super();
+		this.id = id;
+		this.statement = statement;
+		this.type = type;
+	}
+
+	public Answer() {
+		super();
+	}
+
 	public Integer getId() {
 		return id;
 	}
@@ -44,17 +55,6 @@ public class Answer implements Serializable {
 
 	public void setType(Boolean type) {
 		this.type = type;
-	}
-
-	public Answer(Integer id, String statement, Boolean type) {
-		super();
-		this.id = id;
-		this.statement = statement;
-		this.type = type;
-	}
-
-	public Answer() {
-		super();
 	}
 
 }

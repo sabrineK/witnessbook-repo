@@ -31,14 +31,6 @@ public class Attachement implements Serializable {
 		this.file = media;
 	}
 
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
 	public Byte getMedia() {
 		return file;
 	}
@@ -53,6 +45,14 @@ public class Attachement implements Serializable {
 
 	public void setTypeMedia(TypeMedia typeMedia) {
 		this.typeMedia = typeMedia;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 }

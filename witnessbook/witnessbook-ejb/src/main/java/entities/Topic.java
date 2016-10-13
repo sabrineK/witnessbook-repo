@@ -1,12 +1,15 @@
 package entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 /**
  * Entity implementation class for Entity: Topic
@@ -23,7 +26,12 @@ public class Topic implements Serializable {
 	private String title;
 	private String description;
 	private Date date;
+	@OneToMany
 	private Attachement attachement;
+	@ManyToOne
+	private User owner;
+	@OneToMany
+	private ArrayList<Comment> comments;
 
 	public Topic(String title, String description, Date date, Attachement attachement) {
 		super();
@@ -35,6 +43,7 @@ public class Topic implements Serializable {
 
 	public Topic() {
 		super();
+		comments = new ArrayList<>();
 	}
 
 	public Integer getId() {
@@ -75,6 +84,22 @@ public class Topic implements Serializable {
 
 	public void setAttachement(Attachement attachement) {
 		this.attachement = attachement;
+	}
+
+	public User getOwner() {
+		return owner;
+	}
+
+	public void setOwner(User owner) {
+		this.owner = owner;
+	}
+
+	public ArrayList<Comment> getComments() {
+		return comments;
+	}
+
+	public void setComments(ArrayList<Comment> comments) {
+		this.comments = comments;
 	}
 
 }

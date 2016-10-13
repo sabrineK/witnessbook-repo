@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  * Entity implementation class for Entity: Song
@@ -24,6 +25,7 @@ public class Song implements Serializable {
 	private Date creationDate;
 	private Float rate;
 	private Integer played;
+	@OneToOne(mappedBy="song")
 	private Attachement track;
 
 	public Song(Integer id, String name, Date creationDate, Float rate, Integer played, Attachement track) {

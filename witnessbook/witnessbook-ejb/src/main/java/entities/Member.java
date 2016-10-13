@@ -1,6 +1,7 @@
 package entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -21,6 +22,10 @@ public class Member extends User implements Serializable {
 
 	public Member() {
 		super();
+		followingBands = new ArrayList<User>();
+		challenges = new ArrayList<Challenge>();
+		tickets = new ArrayList<>();
+
 	}
 
 	public Member(Integer id, String login, String password, String mail, String adress, String phone, String avatar,
@@ -55,5 +60,28 @@ public class Member extends User implements Serializable {
 		this.birthDate = birthDate;
 	}
 
-	
+	public ArrayList<User> getFollowingBands() {
+		return followingBands;
+	}
+
+	public void setFollowingBands(ArrayList<User> followingBands) {
+		this.followingBands = followingBands;
+	}
+
+	public ArrayList<Challenge> getChallenges() {
+		return challenges;
+	}
+
+	public void setChallenges(ArrayList<Challenge> challenges) {
+		this.challenges = challenges;
+	}
+
+	public ArrayList<Ticket> getTickets() {
+		return tickets;
+	}
+
+	public void setTickets(ArrayList<Ticket> tickets) {
+		this.tickets = tickets;
+	}
+
 }
